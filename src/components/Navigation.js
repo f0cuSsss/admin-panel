@@ -6,7 +6,7 @@ import logo from '../images/logo.png'
 
 export const Navigation = () => {
     return (
-        <aside class="nav-grid">
+        <aside className="nav-grid">
 
             <img alt="" src={logo}/>
 
@@ -14,39 +14,39 @@ export const Navigation = () => {
                 <div class="item nav-item" >
                     <i className="chart bar icon large" />
                     <div 
-                        class="middle aligned content" >
+                        className="middle aligned content" >
                             Activity
                     </div>
                 </div>
 
-                <div class="item nav-item" >
+                <div className="item nav-item" >
                     <i className="list icon large" />
                     <div 
-                        class="middle aligned content" >
+                        className="middle aligned content" >
                             Ban-list
                     </div>
                 </div>
 
-                <div class="item nav-item" >
+                <div className="item nav-item" >
                     <i className="tasks icon large" />
                     <div 
-                        class="middle aligned content" >
+                        className="middle aligned content" >
                             Wishes
                     </div>
                 </div>
 
-                <div class="item nav-item" >
+                <div className="item nav-item" >
                     <i className="paste icon large" />
                     <div 
-                        class="middle aligned content" >
+                        className="middle aligned content" >
                             Reports
                     </div>
                 </div>
 
-                <div class="item nav-item" >
+                <div className="item nav-item" >
                     <i className="archive icon large" />
                     <div 
-                        class="middle aligned content" >
+                        className="middle aligned content" >
                             Archive
                     </div>
                 </div>
