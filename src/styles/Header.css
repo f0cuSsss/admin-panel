@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Restora';
+    src: local('Restora'), url(../fonts/RestoraThinItalic.otf) format('truetype');
+}
+
+header {
+    display: grid;
+    grid-template-columns: 55% 15% 15% 15%;
+    grid-template-rows: 50px;
+    grid-template-areas: "text users sign_out cur_online ";
+}
+
+.header-text {
+    grid-area: text;
+    font-size: 32px;
+    line-height: 50%;
+    font-weight: bold;
+    color: #fff;
+    font-family: Restora, serif;
+}
+
+.signin-icon {
+    align-self: center;
+    cursor: pointer;
+    justify-self: end;
+    padding: 10px;
+}
+
+.detail {
+    
+}
+
+.sign-out {
+    grid-area: sign_out;
+}
+
+.eye {
+    grid-area: cur_online;
+}
+
+.users {
+    grid-area: users;
+}
+
+.center {
+    align-self: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .header-text {
+        grid-area: text;
+        font-size: 26px;
+        line-height: 50%;
+        font-weight: bold;
+        color: #fff;
+        font-family: Restora, serif;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .header-text {
+        grid-area: text;
+        font-size: 18px;
+        line-height: 50%;
+        font-weight: bold;
+        color: #fff;
+        font-family: Restora, serif;
+    }
+}
+
