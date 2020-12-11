@@ -9,37 +9,37 @@ html {
     background-color: #dee9ff;
     display: grid;
     min-height: 100vh;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 7fr;
     grid-template-rows: 50px 3fr 50px;
     /* grid-gap: 0.5em; */
     grid-template-areas:
-        "h h"
+        "nav h"
         "nav c"
         "nav f"
 }
 
-.header-bar {
-    background-color: #06090F;
+.wrap > header {
+    background-color: #0D1117;
     color: white;
     /* grid-column: 1/4; */
     height: 50px;
     grid-area: h;
 }
 
-.footer-bar {
+.wrap > footer {
     background-color: #1c2330;
     color: white;
     /* grid-column: 1/4; */
     grid-area: f;
 }
 
-.content {
+.wrap > div {
     background-color: rgb(207, 174, 131);
     grid-area: c;
     
 }
 
-.navigation-menu {
+.wrap > aside {
     background-color: #0D1117;
     color: white;
     grid-area: nav;
@@ -48,5 +48,3 @@ html {
 .color-white{
     color: white;
 }
-
-
