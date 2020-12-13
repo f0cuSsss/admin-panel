@@ -10,12 +10,12 @@ export const Navigation = () => {
         <aside className="nav-grid">
             <img alt="" src={logo}/>
             <div>
-                <Item icon="home" title="Main" />
-                <Item icon="chart bar" title="Activity" />
-                <Item icon="list" title="Ban-list" />
-                <Item icon="tasks" title="Wishes" />
-                <Item icon="paste" title="Reports" />
-                <Item icon="archive" title="Archive" />
+                <Item icon="home" title="Main" to="/" />
+                <Item icon="chart bar" title="Activity" to="/activity" />
+                <Item icon="list" title="Ban-list" to="/banlist" />
+                <Item icon="tasks" title="Wishes" to="/wishes" />
+                <Item icon="paste" title="Reports" to="/reports" />
+                <Item icon="archive" title="Archive" to="/archive" />
             </div>
         </aside>
     );

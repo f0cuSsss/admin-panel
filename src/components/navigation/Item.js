@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-export const Item = ({ icon, title }) => {
+export const Item = ({ icon, title, to }) => {
     return (
-        <div className="item nav-item" >
+        <Link to={to} className="item nav-item" >
             <i className={`${icon} icon large`} />
             <div className="middle aligned content" >
                 {title}
             </div>
-        </div>
+        </Link>
     );
 }
