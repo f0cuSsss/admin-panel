@@ -20,12 +20,12 @@ class AdminPanel extends React.Component {
         if(this.props.isSignedIn){
             return (
                 <div>
-                    <Route path="/dashboard/" exact component={Main}/>
-                    <Route path="/dashboard/Activity" exact component={Activity}/>
-                    <Route path="/dashboard/Reports" exact component={Reports}/>
-                    <Route path="/dashboard/Wishes" exact component={Wishes}/>
-                    <Route path="/dashboard/Banlist" exact component={BanList}/>
-                    <Route path="/dashboard/archive" exact component={Archive}/>
+                    <Route path="/" exact component={Main}/>
+                    <Route path="/Activity" component={Activity}/>
+                    <Route path="/Reports" component={Reports}/>
+                    <Route path="/Wishes" component={Wishes}/>
+                    <Route path="/Banlist" component={BanList}/>
+                    <Route path="/archive" component={Archive}/>
                 </div>
             );
         }
@@ -34,21 +34,23 @@ class AdminPanel extends React.Component {
                 <div>
                     <NeedSignIn />
                 </div>
-            );
+            )
         }
     }
 
     render() {
         return (
-            <div className="wrap">
-                <Header />
+            <BrowserRouter>
+                <div className="wrap">
+                    <Header />
 
-                <Navigation />
+                    <Navigation />
 
-                {this.getContent()}
+                    {this.getContent()}
 
-                <Footer />
-            </div>
+                    <Footer />
+                </div>
+            </BrowserRouter>
         );
     }
 }
