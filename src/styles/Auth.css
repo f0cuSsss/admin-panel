@@ -74,3 +74,21 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     cursor: pointer;
 }
+
+.auth-block > h2 {
+    text-align: center;
+    color: white;
+}
+
+
+.singedin-nav {
+    background-color: #43a756;
+    border-radius: 30px;
+    margin: 15px 50px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
