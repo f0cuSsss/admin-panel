@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import { connect } from 'react-redux'
 
 import '../styles/AdminPanel.css'
-import { Header } from './Header'
+import Header from './Header'
 import { Navigation } from './Navigation'
 import { Footer } from './Footer'
 import Main from './contents/Main'
@@ -20,12 +20,12 @@ class AdminPanel extends React.Component {
         if(this.props.isSignedIn){
             return (
                 <div>
-                    <Route path="/" exact component={Main}/>
-                    <Route path="/Activity" component={Activity}/>
-                    <Route path="/Reports" component={Reports}/>
-                    <Route path="/Wishes" component={Wishes}/>
-                    <Route path="/Banlist" component={BanList}/>
-                    <Route path="/archive" component={Archive}/>
+                    <Route path="/dashboard/" exact component={Main}/>
+                    <Route path="/dashboard/activity" exact component={Activity}/>
+                    <Route path="/dashboard/reports" exact component={Reports}/>
+                    <Route path="/dashboard/wishes" exact component={Wishes}/>
+                    <Route path="/dashboard/banlist" exact component={BanList}/>
+                    <Route path="/dashboard/archive" exact component={Archive}/>
                 </div>
             );
         }
